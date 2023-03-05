@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Flowers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="flower" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Rose"/>
+                                        <xs:enumeration value="Tulip"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="soil">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="sod-podzolic"/>
+                                        <xs:enumeration value="ground"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="origin">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Iran"/>
+                                        <xs:enumeration value="Netherlands"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="visual_рarameters">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="stem_color">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="dark_green"/>
+                                                    <xs:enumeration value="green"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="leaf_color">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="braun"/>
+                                                    <xs:enumeration value="green"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="size">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:enumeration value="50"/>
+                                                    <xs:enumeration value="30"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="grovin_tips">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="temperature_celsius">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:enumeration value="12"/>
+                                                    <xs:enumeration value="7"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element type="xs:string" name="lighting"/>
+                                        <xs:element name="watering_milliliters">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:enumeration value="450"/>
+                                                    <xs:enumeration value="550"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="multiplying">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="cuttings"/>
+                                        <xs:enumeration value="seed"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

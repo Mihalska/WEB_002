@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Candies>
+    <Candy id="1">
+        <name>Romashka</name>
+        <producer>Roshen</producer>
+        <sort>with_filling</sort>
+        <packaging>in_box</packaging>
+    </Candy>
+    <Candy id="2">
+        <name>Sharm</name>
+        <producer>ABK</producer>
+        <sort>cream_filling</sort>
+        <packaging>without_box</packaging>
+    </Candy>
+    <Candy id="3">
+        <name>Mix</name>
+        <producer>Delight</producer>
+        <sort>chewing</sort>
+        <packaging>in_box</packaging>
+    </Candy>
+
+</Candies>

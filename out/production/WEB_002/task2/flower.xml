@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Flowers xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation = "flower.xsd">
+
+    <flower>
+        <name>Rose</name>
+        <soil>sod-podzolic</soil>
+        <origin>Iran</origin>
+        <visual_рarameters>
+            <stem_color>dark_green</stem_color>
+            <leaf_color>braun</leaf_color>
+            <size>50</size>
+        </visual_рarameters>
+        <grovin_tips>
+            <temperature_celsius>12</temperature_celsius>
+            <lighting>yes</lighting>
+            <watering_milliliters>450</watering_milliliters>
+        </grovin_tips>
+        <multiplying>cuttings</multiplying>
+    </flower>
+    <flower>
+        <name>Tulip</name>
+        <soil>ground</soil>
+        <origin>Netherlands</origin>
+        <visual_рarameters>
+            <stem_color>green</stem_color>
+            <leaf_color>green</leaf_color>
+            <size>30</size>
+        </visual_рarameters>
+        <grovin_tips>
+            <temperature_celsius>7</temperature_celsius>
+            <lighting>yes</lighting>
+            <watering_milliliters>550</watering_milliliters>
+        </grovin_tips>
+        <multiplying>seed</multiplying>
+    </flower>
+</Flowers>
